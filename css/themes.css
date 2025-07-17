@@ -1,0 +1,121 @@
+/* Light Theme (Default) */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --accent-color: #06b6d4;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-color: #3b82f6;
+    --secondary-color: #2563eb;
+    --accent-color: #06b6d4;
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Theme-specific adjustments */
+[data-theme="dark"] .hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+[data-theme="dark"] .cta-button {
+    background: var(--bg-primary);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .cta-button:hover {
+    background: var(--text-primary);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .skill-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .contact-item {
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .project-placeholder,
+[data-theme="dark"] .profile-placeholder {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+/* Theme transition effects */
+*,
+*::before,
+*::after {
+    transition: var(--transition);
+}
+
+/* Smooth theme switching */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card,
+.project-card,
+.contact-item {
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Alternative color schemes for different themes */
+.theme-blue {
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --accent-color: #06b6d4;
+}
+
+.theme-green {
+    --primary-color: #059669;
+    --secondary-color: #10b981;
+    --accent-color: #34d399;
+}
+
+.theme-purple {
+    --primary-color: #7c3aed;
+    --secondary-color: #8b5cf6;
+    --accent-color: #a78bfa;
+}
+
+.theme-orange {
+    --primary-color: #ea580c;
+    --secondary-color: #f97316;
+    --accent-color: #fb923c;
+}
+
+/* High contrast mode for accessibility */
+@media (prefers-contrast: high) {
+    :root {
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    }
+    
+    [data-theme="dark"] {
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
