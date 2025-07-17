@@ -1,16 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Ruben Roldan - Technical Support & Developer</title>
+    <meta name="description" content="Portfolio of Ruben Roldan, Full Stack Developer & Technical Support Specialist. Skilled in JavaScript, React, Node.js, Python, and SQL. Available for freelance projects and full-time opportunities.">
+    <meta name="keywords" content="Ruben Roldan, Full Stack Developer, Technical Support, Web Development, JavaScript, React, Node.js, Python, SQL, Portfolio, Chile, Viña del Mar">
+    <meta name="author" content="Ruben Roldan">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ruben Roldan - Full Stack Developer & Technical Support">
+    <meta property="og:description" content="Portfolio of Ruben Roldan, Full Stack Developer & Technical Support Specialist. Available for freelance projects and full-time opportunities.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://rroldanb.github.io/rroldan-Portfolio/">
+    <meta property="og:site_name" content="Ruben Roldan Portfolio">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Ruben Roldan - Full Stack Developer & Technical Support">
+    <meta property="twitter:description" content="Portfolio of Ruben Roldan, Full Stack Developer & Technical Support Specialist. Available for freelance projects and full-time opportunities.">
+    <meta property="twitter:image" content="images/og-image.jpg">
+    
+    <!-- Iconos -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    
+    <!-- Título -->
+    <title>Ruben Roldan - Full Stack Developer & Technical Support Specialist</title>
+    
+    <!-- Preconexiones para mejor rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/themes.css">
+    
+    <!-- Precarga de recursos críticos -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="translations/en.json" as="fetch" crossorigin>
+    <link rel="preload" href="translations/es.json" as="fetch" crossorigin>
+    
+    <!-- Schema.org  -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ruben Roldan",
+        "jobTitle": "Full Stack Developer & Technical Support Specialist",
+        "description": "Full Stack Developer and Technical Support Specialist with expertise in JavaScript, React, Node.js, Python, and SQL",
+        "email": "ruben.roldan.b@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Viña del Mar",
+            "addressCountry": "Chile"
+        },
+        "sameAs": [
+            "https://linkedin.com/in/ruben-roldan",
+            "https://github.com/rroldanb"
+        ],
+        "knowsAbout": [
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Python",
+            "SQL",
+            "Web Development",
+            "Technical Support"
+        ],
+        "availableLanguage": ["Spanish", "English"]
+    }
+    </script>
+    
+    <!-- Tema por defecto para evitar flash -->
+    <script>
+        // Cargar tema guardado antes de que se renderice la página
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Portfolio</div>
+            <div class="logo"> <img src="images/favicon.png" alt="logo" class="logo-img"> Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#about" data-key="nav-about">About</a></li>
                 <li><a href="#skills" data-key="nav-skills">Skills</a></li>
@@ -26,6 +107,7 @@
 
     <section class="hero">
         <div class="container">
+            <!-- <img src="images/favicon.ico" alt="Hero Image" class="hero-image"> -->
             <h1 data-key="hero-name">Ruben Roldan</h1>
             <h2 data-key="hero-title">Technical Support Specialist & Developer</h2>
             <p data-key="hero-subtitle">20+ years supporting enterprise solutions, transitioning into innovative development</p>
