@@ -141,15 +141,19 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     transition: var(--transition);
 }
 
 [data-theme="dark"] .header {
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(15, 23, 42, 0.25);
 }
+
+
+
+
 
 .nav {
     display: flex;
@@ -406,6 +410,16 @@ display: block;
     height: 200px;
     object-fit: cover;
     border-radius: 0.75rem 0.75rem 0 0;
+}
+
+
+
+
+
+
+.project-image:hover {
+    transform: scale(1.1);
+    transition: var(--transition);
 }
 
 .project-content {

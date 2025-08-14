@@ -35,7 +35,7 @@
 <body x-data="portfolio()">
     <!-- Header -->
     <header class="header">
-        <div class="container">
+        <div class="container glass-effect">
             <nav class="nav"  x-data="{ mobileMenuOpen: false, currentTheme: 'light', currentLang: 'en' }">
                 <a href="#home" class="logo">
                     <img src="assets/img/icons/favicon.png" alt="Logo Ruben Roldan">
@@ -51,8 +51,8 @@
                     <li class="nav-cv">
                         <span>Download CV ▾</span>
                         <ul class="dropdown-cv">
-                            <li><a href="/files/CV-Gago-Roldan-EN.pdf" target="_blank" @click="mobileMenuOpen = false">English</a></li>
-                            <li><a href="/files/CV-Gago-Roldan-ES.pdf" target="_blank" @click="mobileMenuOpen = false">Español</a></li>
+                            <li><a href="assets/files/CV-Ruben-Roldan-EN.pdf" target="_blank" @click="mobileMenuOpen = false">English</a></li>
+                            <li><a href="/files/CV-Ruben-Roldan-ES.pdf" target="_blank" @click="mobileMenuOpen = false">Español</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -272,8 +272,10 @@
                         Issued in 2025 by DataCamp.
                     </p>
                     <span class="project-badge">
-                        <i class="fas fa-certificate"></i>
-                        <span data-i18n="studies.snowflake.badge">Certification</span>
+                        <!-- <i class="fas fa-certificate"></i>
+                        <span data-i18n="studies.snowflake.badge">Certification</span> -->
+                        <i class="fas fa-graduation-cap"></i>
+                        <span data-i18n="studies.fullstack.badge">Career Program</span>
                     </span>
                 </div>
             </div>
@@ -289,9 +291,10 @@
                         Issued in 2025 by DataCamp.
                     </p>
                     <span class="project-badge">
-                        <i class="fas fa-certificate"></i>
-                        <span data-i18n="studies.data-eng.badge">Certification</span>
-                    </span>
+                        <!-- <i class="fas fa-certificate"></i>
+                        <span data-i18n="studies.data-eng.badge">Certification</span> -->
+                        <i class="fas fa-graduation-cap"></i>
+                        <span data-i18n="studies.fullstack.badge">Career Program</span>                    </span>
                 </div>
             </div>
 
@@ -306,8 +309,10 @@
                         Issued in 2025 by DataCamp.
                     </p>
                     <span class="project-badge">
-                        <i class="fas fa-certificate"></i>
-                        <span data-i18n="studies.python-dev.badge">Certification</span>
+                        <!-- <i class="fas fa-certificate"></i>
+                        <span data-i18n="studies.python-dev.badge">Certification</span> -->
+                        <i class="fas fa-graduation-cap"></i>
+                        <span data-i18n="studies.fullstack.badge">Career Program</span>
                     </span>
                 </div>
             </div>
@@ -387,7 +392,7 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 ">
                 <h2 class="text-4xl font-bold mb-4" data-i18n="contact.title">Get In Touch</h2>
                 <p class="text-xl  mb-8" data-i18n="contact.subtitle">
                     Ready to collaborate on your next project or discuss opportunities
@@ -396,7 +401,7 @@
             </div>
             
             <div class="contact-grid">
-                <div class="contact-item">
+                <div class="contact-item card project-card">
                     <div class="icon">
                         <i class="fas fa-envelope"></i>
                     </div>
@@ -404,7 +409,7 @@
                     <p><a href="mailto:ruben.roldan.b@gmail.com">ruben.roldan.b@gmail.com</a></p>
                 </div>
                 
-                <div class="contact-item">
+                <div class="contact-item card project-card">
                     <div class="icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
@@ -412,7 +417,7 @@
                     <p data-i18n="contact.location.value">Viña del Mar, Chile</p>
                 </div>
                 
-                <div class="contact-item">
+                <div class="contact-item card project-card">
                     <div class="icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
@@ -421,7 +426,7 @@
                 </div>
             </div>
             
-            <div class="social-links">
+            <div class="social-links ">
                 <a href="https://linkedin.com/in/ruben-roldan" 
                    target="_blank" 
                    rel="noopener noreferrer" 
