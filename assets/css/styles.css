@@ -2,7 +2,7 @@
 :root {
     --primary: #a225eb;
     --primary: #2563eb;
-    --primary-dark: #b31dd8;
+    --primary-dark: #1d84d8;
     --secondary: #c43bf6;
     --accent: #06b6d4;
     --success: #10b981;
@@ -265,7 +265,7 @@ display: block;
     justify-content: center;
     cursor: pointer;
     transition: var(--transition);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .theme-toggle:hover, .lang-toggle:hover {
@@ -279,7 +279,7 @@ display: block;
     display: none;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--text-primary);
     cursor: pointer;
 }
