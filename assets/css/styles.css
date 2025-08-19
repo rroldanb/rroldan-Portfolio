@@ -451,6 +451,88 @@ display: block;
     font-weight: 500;
 }
 
+
+
+.sub-projects-grid {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.sub-card {
+  flex: 0 0 220px;              /* un poco más angosta */
+  height: 20rem;               /* altura reducida */
+  background: var(--bg-tertiary);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;               /* usamos flexbox para alinear internamente */
+  flex-direction: column;      /* contenido vertical */
+  transition: transform 0.3s;
+  justify-content: space-around;
+}
+
+.sub-card img {
+  width: 100%;
+  height: 4.5rem;               /* menos altura para que no domine la card */
+  object-fit: contain;           /* que se adapte llenando el espacio */
+  border-radius: 1rem 1rem 0 0;
+  margin: 0;                   /* sin separación extra */
+  display: block;              /* asegura que quede pegada al top */
+}
+
+
+.sub-project-content {
+  padding: 0.75rem 1rem;       /* menos padding para más compacidad */
+  flex: 1;                     /* ocupa el espacio restante debajo de la imagen */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sub-project-content h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+
+}
+
+.sub-project-content p {
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+}
+
+.sub-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Botones carrusel */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+
+
+
+
 /* Contact Section */
 .contact-grid {
     display: grid;

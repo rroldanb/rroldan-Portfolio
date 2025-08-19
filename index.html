@@ -196,9 +196,120 @@
                 <h2 class="text-4xl font-bold mb-4" data-i18n="projects.title">Projects & Experience</h2>
                 <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
             </div>
+
+
+ <!-- Enterprise Software Support -->
+<div class="card project-card">
+  <div class="project-content">
+    <h3 data-i18n="projects.enterprise.title">Enterprise Software Support (Level 2)</h3>
+    <p data-i18n="projects.enterprise.desc"> ... </p>
+  </div>
+
+  <!-- Botones -->
+  <button class="carousel-btn left">&#10094;</button>
+  <button class="carousel-btn right">&#10095;</button>
+
+    <div class="sub-projects-grid">
+
+        <!-- Responsetek -->
+        <div class="sub-card">
+
+            <img src="assets/img/projects/responsetek3.png" 
+                 alt="Responsetek" 
+                 class="sub-project-image">
+            <div class="sub-project-content">
+                <h4 data-i18n="projects.enterprise.responsetek.title">Responsetek</h4>
+                <p data-i18n="projects.enterprise.responsetek.desc">
+                    Survey system measuring sales performance and customer service. Implemented in 20+ countries for banks, telecoms, and government institutions.
+                </p>
+            </div>
+            <span class="project-badge">
+                <i class="fas fa-globe"></i>
+                <span >SQL Server - ETL - Surveys</span>
+            </span>
+        </div>
+
+        <!-- Coretrac -->
+        <div class="sub-card">
+
+            <img src="assets/img/projects/coretrac.png" 
+                 alt="Coretrac" 
+                 class="sub-project-image">
+            <div class="sub-project-content">
+                <h4 data-i18n="projects.enterprise.coretrac.title">Coretrac</h4>
+                <p data-i18n="projects.enterprise.coretrac.desc">
+                    Specialized CRM solution integrated with core systems of banks and credit unions. National coverage in the United States.
+                </p>
+            </div>
+            <span class="project-badge">
+                <i class="fas fa-globe"></i>
+                <span >SQL - ETL - IIS - Banking</span>
+            </span>
+        </div>
+
+
+
+        <!-- Nuview -->
+        <div class="sub-card">
+
+            <img src="assets/img/projects/nuview.png" 
+                 alt="Nuview" 
+                 class="sub-project-image">
+                    <div class="sub-project-content">
+                        <h4 data-i18n="projects.enterprise.nuview.title">Nuview</h4>
+                        <p data-i18n="projects.enterprise.nuview.desc">
+                            Human resources management system with national coverage in the USA and Canada.
+                        </p>
+                    </div>
+            <span class="project-badge">
+                <i class="fas fa-globe"></i>
+                <span >SQL Server - HR</span>
+            </span>
+        </div>
+
+        <!-- SupportSoft -->
+        <div class="sub-card">
+            <img src="assets/img/projects/supportsoft.png" 
+                 alt="SupportSoft" 
+                 class="sub-project-image">
+            <div class="sub-project-content">
+                <h4 data-i18n="projects.enterprise.supportsoft.title">SupportSoft</h4>
+                <p data-i18n="projects.enterprise.supportsoft.desc">
+                    Endpoint automation solution from Ignite. Empowered IT teams and MSPs to resolve issues more effectively.
+                </p>
+            </div>
+            <span class="project-badge">
+                <i class="fas fa-globe"></i>
+                <span >SQL Server - Automation</span>
+            </span>
+        </div>
+
+        <!-- Others -->
+        <div class="sub-card">
+            <img src="assets/img/projects/sococo.png" 
+                 alt="Others" 
+                 class="sub-project-image">
+            <div class="sub-project-content">
+                <h4 data-i18n="projects.enterprise.others.title">Others</h4>
+                <p data-i18n="projects.enterprise.others.desc">
+                    Additional platforms supported: Sococo, Broadvision, Computron, CityNumbers, CIS, SchooLoop.
+                </p>
+            </div>
+            <span class="project-badge">
+                <i class="fas fa-globe"></i>
+                <span >Various Technologies</span>
+            </span>
+        </div>
+    </div>
+</div>
+            
+
+
+
+
             <div class="projects-grid">
 <!-- Banking Solutions -->
-                <div class="card project-card">
+                <!-- <div class="card project-card">
                     <img src="assets/img/projects/coretrac.png" 
                          alt="Banking Solutions" 
                          class="project-image">
@@ -213,8 +324,15 @@
                             <span data-i18n="projects.banking.badge">Enterprise</span>
                         </span>
                     </div>
-                </div>
-<!-- Web Development Projects -->
+                </div> -->
+
+
+
+
+   
+
+
+                <!-- Web Development Projects -->
                 <div class="card project-card">
                     <img src="assets/img/projects/code.png" 
                          alt="Web Development" 
@@ -457,6 +575,18 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+<script>
+const grid = document.querySelector('.sub-projects-grid');
+const btnLeft = document.querySelector('.carousel-btn.left');
+const btnRight = document.querySelector('.carousel-btn.right');
 
+btnLeft.addEventListener('click', () => {
+  grid.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+btnRight.addEventListener('click', () => {
+  grid.scrollBy({ left: 300, behavior: 'smooth' });
+});
+</script>
 </body>
 </html>

@@ -34,6 +34,29 @@ const translations = {
         "skills.programming.item2": "SQL Stored Procedures",
         "skills.programming.item4": "API Integration",
         "projects.title": "Projects & Experience",
+
+
+
+  "projects.enterprise.title": "Enterprise Software Support (Level 2)",
+  "projects.enterprise.desc": "Provided Level-2 support for multiple enterprise solutions across banking, HR, communications, and IT automation, ensuring reliability, scalability, and customer satisfaction.",
+
+  "projects.enterprise.coretrac.title": "Coretrac",
+  "projects.enterprise.coretrac.desc": "Specialized CRM solution integrated with core systems of banks and credit unions. National coverage in the United States.",
+
+  "projects.enterprise.responsetek.title": "Responsetek",
+  "projects.enterprise.responsetek.desc": "Survey system measuring sales performance and customer service. Implemented in 20+ countries for banks, telecoms, and government institutions.",
+
+  "projects.enterprise.nuview.title": "Nuview",
+  "projects.enterprise.nuview.desc": "Human resources management system with national coverage in the USA and Canada.",
+
+  "projects.enterprise.supportsoft.title": "SupportSoft",
+  "projects.enterprise.supportsoft.desc": "Endpoint automation solution from Ignite. Empowered IT teams and MSPs to resolve issues more effectively.",
+
+  "projects.enterprise.others.title": "Others",
+  "projects.enterprise.others.desc": "Additional platforms supported: Sococo, Broadvision, Computron, CityNumbers, CIS, SchooLoop.",
+
+
+
         "projects.banking.title": "Banking Solutions Support",
         "projects.banking.desc": "Provided technical support for Coretrac banking agent sales management system across multiple countries, ensuring 100% uptime and customer satisfaction.",
         "projects.banking.badge": "Enterprise",
@@ -117,6 +140,30 @@ const translations = {
         "skills.programming.item2": "Procedimientos Almacenados SQL",
         "skills.programming.item4": "Integración de API",
         "projects.title": "Proyectos y Experiencia",
+
+
+
+  "projects.enterprise.title": "Soporte de Software Empresarial (Nivel 2)",
+  "projects.enterprise.desc": "Proporcioné soporte de nivel 2 para múltiples soluciones empresariales en banca, RRHH, comunicaciones y automatización de TI, asegurando confiabilidad, escalabilidad y satisfacción del cliente.",
+
+  "projects.enterprise.coretrac.title": "Coretrac",
+  "projects.enterprise.coretrac.desc": "Solución CRM especializada que se integra con los sistemas principales de bancos y cooperativas de crédito. Cobertura nacional en Estados Unidos.",
+
+  "projects.enterprise.responsetek.title": "Responsetek",
+  "projects.enterprise.responsetek.desc": "Sistema de encuestas para medir desempeño de ventas y servicio al cliente. Implementado en más de 20 países para bancos, telecomunicaciones y organismos gubernamentales.",
+
+  "projects.enterprise.nuview.title": "Nuview",
+  "projects.enterprise.nuview.desc": "Sistema de gestión de recursos humanos con cobertura nacional en Estados Unidos y Canadá.",
+
+  "projects.enterprise.supportsoft.title": "SupportSoft",
+  "projects.enterprise.supportsoft.desc": "Solución de automatización de endpoints de Ignite. Potenció a equipos de TI y MSPs para resolver problemas de manera más eficaz.",
+
+  "projects.enterprise.others.title": "Otros",
+  "projects.enterprise.others.desc": "Plataformas adicionales soportadas: Sococo, Broadvision, Computron, CityNumbers, CIS, SchooLoop.",
+
+
+
+
         "projects.banking.title": "Soporte Soluciones Bancarias",
         "projects.banking.desc": "Proporcioné soporte técnico para el sistema de gestión de ventas de agentes bancarios Coretrac en múltiples países, asegurando 100% de tiempo de actividad y satisfacción del cliente.",
         "projects.banking.badge": "Empresarial",
@@ -279,7 +326,12 @@ function portfolio() {
                 observer.observe(el);
             });
         }
+        
     }
+
+
+
+    
 }
 
 // Initialize theme before Alpine loads
@@ -287,3 +339,7 @@ function portfolio() {
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
 })();
+
+
+
+
