@@ -1,27 +1,51 @@
 // Translation System
 const translations = {
     en: {
-        "page.title": "Ruben Roldan - Data Engineer & Full Stack Developer",
+        "page.title": "Ruben Roldan - Technical Support Specialist",
         "nav.logo": "Portfolio",
         "nav.about": "About",
         "nav.skills": "Skills", 
         "nav.projects": "Projects",
         "nav.studies": "Studies",
         "nav.contact": "Contact",
+        "nav.cv": "Download CV ▾",
+
         "hero.name": "Ruben",
         "hero.surname": "Roldan",
-        "hero.title": "Data Engineer, Web Developer & Technical Support Specialist",
-        "hero.subtitle": "Code, data management, and problem-solving at scale",
+        "hero.title": "Senior Technical Support Specialist, Data Engineer, Full-Stack Web Developer",
+        "hero.subtitle": "Technical Support, Code, data management, and problem-solving at scale",
         "hero.cta": "Get In Touch",
+
         "about.title": "About Me",
         "about.text1": "Technical Support Specialist & Emerging Developer with 20+ years supporting enterprise software solutions across 20+ countries in banking, telecommunications, and government sectors.",
         "about.text2": "Experienced in JavaScript, React, Node.js, Python, MS-IIS, SQL, HTML/CSS with hands-on application support expertise. Skilled in database troubleshooting, system integration, and technical problem-solving.",
         "about.text3": "Passionate about leveraging technology to solve complex problems and enhance user experiences.",
+
+        "about.p1": "Senior Technical Support Specialist with 20+ years resolving complex, escalated issues across SaaS platforms and enterprise software. As an L2 specialist at Crossover, I supported 10 enterprise solutions for global customers, earning 100% CSAT while ranking among top performers in productivity.",
+        "about.p2": "I trace problems with SQL across relational data models, analyze application behavior, and bring Development and Product teams a researched root cause and a proposed fix, not just a question. I use AI and agentic tools daily to research tickets, draft responses, and keep context across escalations.",
+        "about.bringTitle": "What I bring:",
+        "about.l1Label": "Escalation ownership:",
+        "about.l1Text": "L2 support via chat, phone, and email for customers across global time zones",
+        "about.l2Label": "Technical depth:",
+        "about.l2Text": "SQL, Python, Django (including admin), REST APIs, Linux/Windows/macOS",
+        "about.l3Label": "Databases:",
+        "about.l3Text": "PostgreSQL, SQL Server, MySQL",
+        "about.l4Label": "Tools:",
+        "about.l4Text": "Jira, Zendesk, Slack, Git, OpenAI API",
+        "about.l5Label": "Knowledge sharing:",
+        "about.l5Text": "100+ training sessions delivered at Oracle, plus knowledge base documentation",
+        "about.closing": "Open to remote Senior Technical Support and Support Engineer roles, with overlap in PST-EST hours. Let's connect.",
+        
+        "about": {
+},
+
+
+
         "skills.title": "Technical Skills",
         "skills.support.title": "Technical Support",
         "skills.support.desc": "Enterprise application support and troubleshooting across multiple platforms",
         "skills.support.item1": "Enterprise application support",
-        "skills.support.item2": "System troubleshooting",
+        "skills.support.item2": "Systems troubleshooting",
         "skills.support.item3": "Incident Management",
         "skills.support.item4": "User Training",
         "skills.web.title": "Web Development",
@@ -33,36 +57,30 @@ const translations = {
         "skills.programming.desc": "Multiple programming languages and development methodologies",
         "skills.programming.item2": "SQL Stored Procedures",
         "skills.programming.item4": "API Integration",
+
         "projects.title": "Projects & Experience",
 
-
-
-  "projects.enterprise.title": "Enterprise Software Support (Level 2)",
-  "projects.enterprise.desc": "Provided Level-2 support for multiple enterprise solutions across banking, HR, communications, and IT automation, ensuring reliability, scalability, and customer satisfaction.",
-
-  "projects.enterprise.coretrac.title": "Coretrac",
-  "projects.enterprise.coretrac.desc": "Specialized CRM solution integrated with core systems of banks and credit unions. National coverage in the United States.",
-
-  "projects.enterprise.responsetek.title": "Responsetek",
-  "projects.enterprise.responsetek.desc": "Survey system measuring sales performance and customer service. Implemented in 20+ countries for banks, telecoms, and government institutions.",
-
-  "projects.enterprise.nuview.title": "Nuview",
-  "projects.enterprise.nuview.desc": "Human resources management system with national coverage in the USA and Canada.",
-
-  "projects.enterprise.supportsoft.title": "SupportSoft",
-  "projects.enterprise.supportsoft.desc": "Endpoint automation solution from Ignite. Empowered IT teams and MSPs to resolve issues more effectively.",
-
-  "projects.enterprise.others.title": "Others",
-  "projects.enterprise.others.desc": "Additional platforms supported: Sococo, Broadvision, Computron, CityNumbers, CIS, SchooLoop.",
-
-
+        "projects.enterprise.title": "Enterprise Software Support (Level 2)",
+        "projects.enterprise.desc": "Provided Level-2 support for multiple enterprise solutions across banking, HR, communications, and IT automation, ensuring reliability, scalability, and customer satisfaction.",
+        "projects.enterprise.coretrac.title": "Coretrac",
+        "projects.enterprise.coretrac.desc": "Specialized CRM solution integrated with core systems of banks and credit unions. National coverage in the United States.",
+        "projects.enterprise.responsetek.title": "Responsetek",
+        "projects.enterprise.responsetek.desc": "Survey system measuring sales performance and customer service. Implemented in 20+ countries for banks, telecoms, and government institutions.",
+        "projects.enterprise.nuview.title": "Nuview",
+        "projects.enterprise.nuview.desc": "Human resources management system with national coverage in the USA and Canada.",
+        "projects.enterprise.supportsoft.title": "SupportSoft",
+        "projects.enterprise.supportsoft.desc": "Endpoint automation solution from Ignite. Empowered IT teams and MSPs to resolve issues more effectively.",
+        "projects.enterprise.others.title": "Others",
+        "projects.enterprise.others.desc": "Additional platforms supported: Sococo, Broadvision, Computron, CityNumbers, CIS, SchooLoop.",
 
         "projects.banking.title": "Banking Solutions Support",
         "projects.banking.desc": "Provided technical support for Coretrac banking agent sales management system across multiple countries, ensuring 100% uptime and customer satisfaction.",
         "projects.banking.badge": "Enterprise",
+
         "projects.web.title": "Web Development Projects",
         "projects.web.desc": "Developed responsive web applications using modern technologies including React, Node.js, and various CSS frameworks for diverse client requirements.",
         "projects.web.badge": "Development",
+
         "projects.infrastructure.title": "Infrastructure Management",
         "projects.infrastructure.desc": "Managed IT infrastructure for 800+ employees across 5 offices, including server maintenance, network setup, and system upgrades.",
         "projects.infrastructure.badge": "Infrastructure",
@@ -107,27 +125,48 @@ const translations = {
         "footer.text": "© 2025 Portfolio. All rights reserved."
     },
     es: {
-        "page.title": "Rubén Roldán - Ingeniero de Datos y Desarrollador Full Stack",
+        "page.title": "Rubén Roldán - Soporte Técnico Especializado",
         "nav.logo": "Portafolio",
         "nav.about": "Acerca de",
         "nav.skills": "Habilidades",
         "nav.projects": "Proyectos", 
         "nav.studies": "Estudios", 
         "nav.contact": "Contacto",
+        "nav.cv": "Descargar CV ▾",
         "hero.name": "Rubén",
         "hero.surname": "Roldán",
-        "hero.title": "Ingeniero de Datos, Desarrollador Web y Especialista en Soporte Técnico",
-        "hero.subtitle": "Código, gestión de datos y resolución de problemas a escala",
+        "hero.title": "Experimentado Especialista en Soporte Técnico, Ingeniero de Datos, Desarrollador Web Full-Stack",
+
+        "hero.subtitle": "Soporte técnico, código, gestión de datos y resolución de problemas a escala",
         "hero.cta": "Contáctame",
         "about.title": "Acerca de Mí",
         "about.text1": "Especialista en Soporte Técnico y Desarrollador Emergente con 20+ años apoyando soluciones de software empresarial en 20+ países en sectores bancarios, telecomunicaciones y gubernamentales.",
         "about.text2": "Experimentado en JavaScript, React, Node.js, Python, MS-IIS, SQL, HTML/CSS con experiencia práctica en soporte de aplicaciones. Especializado en resolución de problemas de bases de datos, integración de sistemas y resolución técnica.",
         "about.text3": "Apasionado por aprovechar la tecnología para resolver problemas complejos y mejorar las experiencias de usuario.",
+
+        "about.p1": "Especialista Senior en Soporte Técnico con más de 20 años resolviendo problemas complejos y escalados en plataformas SaaS y software empresarial. Como especialista L2 en Crossover, di soporte a 10 soluciones empresariales para clientes globales, logrando un 100% de CSAT y destacando entre los mejores en productividad.",
+        "about.p2": "Rastreo problemas con SQL a través de modelos de datos relacionales, analizo el comportamiento de las aplicaciones y entrego a los equipos de Desarrollo y Producto una causa raíz investigada y una solución propuesta, no solo una pregunta. Uso herramientas de IA y agénticas a diario para investigar tickets, redactar respuestas y mantener el contexto durante las escalaciones.",
+        "about.bringTitle": "Lo que aporto:",
+        "about.l1Label": "Responsabilidad sobre escalaciones:",
+        "about.l1Text": "soporte L2 por chat, teléfono y correo para clientes en distintas zonas horarias globales",
+        "about.l2Label": "Profundidad técnica:",
+        "about.l2Text": "SQL, Python, Django (incluido el admin), REST APIs, Linux/Windows/macOS",
+        "about.l3Label": "Bases de datos:",
+        "about.l3Text": "PostgreSQL, SQL Server, MySQL",
+        "about.l4Label": "Herramientas:",
+        "about.l4Text": "Jira, Zendesk, Slack, Git, OpenAI API",
+        "about.l5Label": "Transferencia de conocimiento:",
+        "about.l5Text": "más de 100 sesiones de capacitación en Oracle, además de documentación y base de conocimiento",
+        "about.closing": "Disponible para roles remotos de Senior Technical Support y Support Engineer, con solapamiento horario PST-EST. ¡Conectemos!",
+"about": {
+},
+
+
         "skills.title": "Habilidades Técnicas",
         "skills.support.title": "Soporte Técnico",
         "skills.support.desc": "Soporte y resolución de problemas de aplicaciones empresariales en múltiples plataformas",
         "skills.support.item1": "Soporte de aplicaciones empresariales",
-        "skills.support.item2": "Resolución de problemas del sistema",
+        "skills.support.item2": "Resolución de problemas de sistemas",
         "skills.support.item3": "Gestión de Incidentes",
         "skills.support.item4": "Capacitación de Usuarios",
         "skills.web.title": "Desarrollo Web",

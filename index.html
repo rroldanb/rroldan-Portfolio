@@ -49,7 +49,7 @@
                     <li><a href="#studies" data-i18n="nav.studies" @click="mobileMenuOpen = false">Studies</a></li>
                     <li><a href="#contact" data-i18n="nav.contact" @click="mobileMenuOpen = false">Contact</a></li>
                     <li class="nav-cv">
-                        <span>Download CV ▾</span>
+                        <span data-i18n="nav.cv">Download CV ▾</span>
                         <ul class="dropdown-cv">
                             <li><a href="assets/files/CV-Ruben-Roldan-EN.pdf" target="_blank" @click="mobileMenuOpen = false">English</a></li>
                             <li><a href="assets/files/CV-Ruben-Roldan-ES.pdf" target="_blank" @click="mobileMenuOpen = false">Español</a></li>
@@ -82,8 +82,8 @@
                         <span data-i18n="hero.name">Ruben</span> 
                         <span class="gradient-text" data-i18n="hero.surname">Roldan</span>
                     </h1>
-                    <h2 data-i18n="hero.title">Data Engineer, Web Developer & Technical Support Specialist</h2>
-                    <p data-i18n="hero.subtitle">Code, data management, and problem-solving at scale</p>
+                    <h2 data-i18n="hero.title">Senior Technical Support Specialist, Data Engineer, Full-Stack Web Developer</h2>
+                    <p data-i18n="hero.subtitle">Technical Support, Code, data management, and problem-solving at scale</p>
                     <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">
                         <i class="fas fa-envelope"></i>
                         Get In Touch
@@ -105,8 +105,30 @@
                 <h2 class="text-4xl font-bold mb-4" data-i18n="about.title">About Me</h2>
                 <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
             </div>
-            <div class="max-w-4xl mx-auto space-y-6 text-lg text-center">
-                <p data-i18n="about.text1">
+            <div class="max-w-4xl mx-auto space-y-6 text-lg ">
+<div class="about-text">
+    <p data-i18n="about.p1">
+        Senior Technical Support Specialist with 20+ years resolving complex, escalated issues across SaaS platforms and enterprise software. As an L2 specialist at Crossover, I supported 10 enterprise solutions for global customers, earning 100% CSAT while ranking among top performers in productivity.
+    </p>
+<br>
+    <p data-i18n="about.p2">
+        I trace problems with SQL across relational data models, analyze application behavior, and bring Development and Product teams a researched root cause and a proposed fix, not just a question. I use AI and agentic tools daily to research tickets, draft responses, and keep context across escalations.
+    </p>
+<br>
+    <p><strong data-i18n="about.bringTitle">What I bring:</strong></p>
+    <ul class="about-list">
+        <li><strong data-i18n="about.l1Label">Escalation ownership:</strong> <span data-i18n="about.l1Text">L2 support via chat, phone, and email for customers across global time zones</span></li>
+        <li><strong data-i18n="about.l2Label">Technical depth:</strong> <span data-i18n="about.l2Text">SQL, Python, Django (including admin), REST APIs, Linux/Windows/macOS</span></li>
+        <li><strong data-i18n="about.l3Label">Databases:</strong> <span data-i18n="about.l3Text">PostgreSQL, SQL Server, MySQL</span></li>
+        <li><strong data-i18n="about.l4Label">Tools:</strong> <span data-i18n="about.l4Text">Jira, Zendesk, Slack, Git, OpenAI API</span></li>
+        <li><strong data-i18n="about.l5Label">Knowledge sharing:</strong> <span data-i18n="about.l5Text">100+ training sessions delivered at Oracle, plus knowledge base documentation</span></li>
+    </ul>
+<br>
+    <p data-i18n="about.closing">
+        Open to remote Senior Technical Support and Support Engineer roles, with overlap in PST-EST hours. Let's connect.
+    </p>
+</div>
+                <!-- <p data-i18n="about.text1">
                     Technical Support Specialist & Emerging Developer with 20+ years supporting enterprise software solutions 
                     across 20+ countries in banking, telecommunications, and government sectors.
                 </p>
@@ -116,7 +138,7 @@
                 </p>
                 <p data-i18n="about.text3">
                     Passionate about leveraging technology to solve complex problems and enhance user experiences.
-                </p>
+                </p> -->
             </div>
         </div>
     </section>
@@ -138,7 +160,7 @@
                     <p data-i18n="skills.support.desc">Enterprise application support and troubleshooting across multiple platforms</p>
                     <ul class="skill-list">
                         <li>• <span data-i18n="skills.support.item1">Enterprise application support</span></li>
-                        <li>• <span data-i18n="skills.support.item2">System troubleshooting</span></li>
+                        <li>• <span data-i18n="skills.support.item2">Systems troubleshooting</span></li>
                         <li>• <span data-i18n="skills.support.item3">Incident Management</span></li>
                         <li>• <span data-i18n="skills.support.item4">User Training</span></li>
                     </ul>
@@ -180,9 +202,10 @@
                     <p data-i18n="skills.programming.desc">Multiple programming languages and development methodologies</p>
                     <ul class="skill-list">
                         <li>• Python / FastAPI</li>
-                        <li>• <span data-i18n="skills.programming.item2">SQL Stored Procedures</span></li>
+                        <li>• Django</li>
                         <li>• JavaScript</li>
                         <li>• <span data-i18n="skills.programming.item4">API Integration</span></li>
+                        <li>• <span data-i18n="skills.programming.item2">SQL Stored Procedures</span></li>
                     </ul>
                 </div>
             </div>
@@ -199,6 +222,8 @@
 
 
  <!-- Enterprise Software Support -->
+<div class="rr-grid">
+
 <div class="card project-card">
   <div class="project-content">
     <h3 data-i18n="projects.enterprise.title">Enterprise Software Support (Level 2)</h3>
@@ -206,10 +231,10 @@
   </div>
 
   <!-- Botones -->
+  
   <button class="carousel-btn left">&#10094;</button>
   <button class="carousel-btn right">&#10095;</button>
-
-    <div class="sub-projects-grid">
+  <div class="sub-projects-grid mx-32">
 
         <!-- Responsetek -->
         <div class="sub-card">
@@ -246,8 +271,6 @@
                 <span >SQL - ETL - IIS - Banking</span>
             </span>
         </div>
-
-
 
         <!-- Nuview -->
         <div class="sub-card">
@@ -301,6 +324,7 @@
             </span>
         </div>
     </div>
+</div>
 </div>
             
 
