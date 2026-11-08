@@ -515,7 +515,7 @@ display: block;
 .carousel-btn {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-10%);
   background: rgba(0,0,0,0.6);
   color: #fff;
   border: none;
@@ -652,6 +652,11 @@ display: block;
     }
 }
 
+@media (min-width: 1536px) {
+    .carousel-btn.left, .carousel-btn.right {
+    display:none;
+    }
+}
 @media (max-width: 480px) {
     .container{
     padding: 0 1rem;

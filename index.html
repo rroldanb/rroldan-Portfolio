@@ -234,7 +234,7 @@
   
   <button class="carousel-btn left">&#10094;</button>
   <button class="carousel-btn right">&#10095;</button>
-  <div class="sub-projects-grid mx-32">
+  <div class="sub-projects-grid mx-auto md:mx-16 ">
 
         <!-- Responsetek -->
         <div class="sub-card">
@@ -605,11 +605,11 @@ const btnLeft = document.querySelector('.carousel-btn.left');
 const btnRight = document.querySelector('.carousel-btn.right');
 
 btnLeft.addEventListener('click', () => {
-  grid.scrollBy({ left: -300, behavior: 'smooth' });
+  grid.scrollBy({ left: -224, behavior: 'smooth' });
 });
 
 btnRight.addEventListener('click', () => {
-  grid.scrollBy({ left: 300, behavior: 'smooth' });
+  grid.scrollBy({ left: 224, behavior: 'smooth' });
 });
 </script>
 </body>
